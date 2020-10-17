@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd"
+        logicalFilePath="classpath:db/changelog/initialise-schema.xml">
+
+    <changeSet id="1" author="matt">
+        <createTable tableName="author">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="first_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="last_name" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <loadData
+                file="db/data/author.csv"
+                tableName="author">
+            <column name="id" type="uuid"/>
+            <column name="user_name" type="string"/>
+            <column name="last_name" type="string"/>
+        </loadData>
+    </changeSet>
+
+    <changeSet id="2" author="matt">
+        <createTable tableName="book">
+            <column name="id" type="uuid">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="isbn" type="varchar(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="page_count" type="numeric">
+                <constraints nullable="false"/>
+            </column>
+            <column name="author" type="uuid">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+
+        <loadData
+                file="db/data/book.csv"
+                tableName="book">
+            <column name="id" type="uuid"/>
+            <column name="title" type="string"/>
+            <column name="isbn" type="string"/>
+            <column name="page_count" type="numeric"/>
+            <column name="author" type="uuid"/>
+        </loadData>
+    </changeSet>
+
+</databaseChangeLog>

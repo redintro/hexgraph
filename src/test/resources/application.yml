@@ -1,0 +1,17 @@
+io:
+  redintro:
+    hexbike:
+      url: "http://localhost:8080/api/callbacks"
+
+server:
+  port: 8081
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  liquibase:
+    enabled: false
+  profiles:
+    active: test

@@ -1,0 +1,24 @@
+version: '3'
+services:
+  db:
+    container_name: hexgraph-db
+    image: postgres:10-alpine
+    restart: always
+    networks:
+      new:
+        aliases:
+          - db_host
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: docker
+      POSTGRES_DB: hexgraph_dev
+    volumes:
+      - db-data:/var/lib/postgres/data
+
+networks:
+  new:
+
+volumes:
+  db-data:
