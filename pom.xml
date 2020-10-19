@@ -97,9 +97,7 @@
 				<version>${jacoco.version}</version>
 				<configuration>
 					<excludes>
-						<!--
-						<exclude>io/redintro/hexgraph/adapter/in/**/*</exclude>
-						-->
+						<!-- TODO: Add tests for these -->
 						<exclude>io/redintro/hexgraph/shared/**/*</exclude>
 						<exclude>**/*HexgraphApplication*.*</exclude>
 					</excludes>
