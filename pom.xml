@@ -19,12 +19,13 @@
 	</parent>
 
 	<properties>
-		<java.version>11</java.version>
-		<jacoco.version>0.8.5</jacoco.version>
-		<jacoco.branch.coverage.threshold>100%</jacoco.branch.coverage.threshold>
-		<jacoco.line.coverage.threshold>100%</jacoco.line.coverage.threshold>
-		<graphql-spring-boot-starter.version>5.0.2</graphql-spring-boot-starter.version>
 		<graphql-java-tools.version>5.2.4</graphql-java-tools.version>
+		<graphql-spring-boot-starter.version>5.0.2</graphql-spring-boot-starter.version>
+		<immutables.version>2.8.8</immutables.version>
+		<jacoco.branch.coverage.threshold>0%</jacoco.branch.coverage.threshold>
+		<jacoco.line.coverage.threshold>0%</jacoco.line.coverage.threshold>
+		<jacoco.version>0.8.5</jacoco.version>
+		<java.version>11</java.version>
 		<liquibase.core.version>3.8.7</liquibase.core.version>
 		<postgresql.version>42.2.10</postgresql.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -54,6 +55,12 @@
 			<groupId>com.graphql-java</groupId>
 			<artifactId>graphql-java-tools</artifactId>
 			<version>${graphql-java-tools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.immutables</groupId>
+			<artifactId>value</artifactId>
+			<version>${immutables.version}</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>javax.xml.bind</groupId>
