@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 /**
  * This class is delegated to by the QueryResolver. It resolves
  * the Author attribute when a book with the author field is
- * retrieved.
+ * resolved.
  */
 @Component
 public class BookResolver implements GraphQLResolver<Book> {

@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import javax.transaction.Transactional;
+import java.util.List;
 import java.util.UUID;
 
 @Component
@@ -25,7 +26,7 @@ public class QueryResolver implements GraphQLQueryResolver {
     }
 
     @Transactional
-    public Iterable<Book> findAllBooks() {
+    public List<Book> findAllBooks() {
         return bookViewPort.showAll();
     }
 
@@ -33,7 +34,7 @@ public class QueryResolver implements GraphQLQueryResolver {
         return bookViewPort.read(id);
     }
 
-    public Iterable<Author> findAllAuthors() {
+    public List<Author> findAllAuthors() {
         return authorViewPort.showAll();
     }
 

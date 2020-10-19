@@ -21,13 +21,11 @@ public class MutationResolver implements GraphQLMutationResolver {
     }
 
     public Author newAuthor(String firstName, String lastName) {
-        Author author = new Author(firstName, lastName);
-        return authorViewPort.create(author);
+        return authorViewPort.create(new Author(firstName, lastName));
     }
 
-    public Book newBook(String title, String isbn, Integer pageCount, UUID authorId) {
-        Book book = new Book(title, isbn, (pageCount != null ? pageCount : 0), new Author(authorId));
-        return  bookViewPort.create(book);
+    public Book newBook(String title, String isbn, int pageCount, UUID authorId) {
+        return  bookViewPort.create(new Book(title, isbn, pageCount, new Author(authorId)));
     }
 
     public boolean deleteBook(UUID id) {

@@ -22,8 +22,8 @@
 		<graphql-java-tools.version>5.2.4</graphql-java-tools.version>
 		<graphql-spring-boot-starter.version>5.0.2</graphql-spring-boot-starter.version>
 		<immutables.version>2.8.8</immutables.version>
-		<jacoco.branch.coverage.threshold>0%</jacoco.branch.coverage.threshold>
-		<jacoco.line.coverage.threshold>0%</jacoco.line.coverage.threshold>
+		<jacoco.branch.coverage.threshold>100%</jacoco.branch.coverage.threshold>
+		<jacoco.line.coverage.threshold>100%</jacoco.line.coverage.threshold>
 		<jacoco.version>0.8.5</jacoco.version>
 		<java.version>11</java.version>
 		<liquibase.core.version>3.8.7</liquibase.core.version>
@@ -97,7 +97,9 @@
 				<version>${jacoco.version}</version>
 				<configuration>
 					<excludes>
+						<!--
 						<exclude>io/redintro/hexgraph/adapter/in/**/*</exclude>
+						-->
 						<exclude>io/redintro/hexgraph/shared/**/*</exclude>
 						<exclude>**/*HexgraphApplication*.*</exclude>
 					</excludes>
