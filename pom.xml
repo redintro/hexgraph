@@ -99,7 +99,7 @@
 					<excludes>
 						<!-- TODO: Add tests for these -->
 						<exclude>io/redintro/hexgraph/shared/**/*</exclude>
-						<exclude>**/*HexgraphApplication*.*</exclude>
+						<exclude>**/*HexgraphApplication.*</exclude>
 					</excludes>
 				</configuration>
 				<executions>
