@@ -1,7 +1,7 @@
 package io.redintro.hexgraph.adapter.out.persistence;
 
-import io.redintro.hexgraph.domain.Author;
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Author;
+import io.redintro.hexgraph.domain.model.Book;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

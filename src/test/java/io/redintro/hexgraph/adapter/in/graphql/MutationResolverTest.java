@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.adapter.in.graphql;
-import io.redintro.hexgraph.domain.Author;
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Author;
+import io.redintro.hexgraph.domain.model.Book;
 import io.redintro.hexgraph.port.in.AuthorViewPort;
 import io.redintro.hexgraph.port.in.BookViewPort;
 import io.redintro.hexgraph.shared.BookNotFoundException;

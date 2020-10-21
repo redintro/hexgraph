@@ -1,7 +1,7 @@
 package io.redintro.hexgraph.service;
 
-import io.redintro.hexgraph.domain.Author;
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Author;
+import io.redintro.hexgraph.domain.model.Book;
 import io.redintro.hexgraph.port.out.BookStorePort;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

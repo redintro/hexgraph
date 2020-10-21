@@ -1,8 +1,8 @@
 package io.redintro.hexgraph.adapter.in.graphql;
 
 import com.coxautodev.graphql.tools.GraphQLQueryResolver;
-import io.redintro.hexgraph.domain.Author;
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Author;
+import io.redintro.hexgraph.domain.model.Book;
 import io.redintro.hexgraph.port.in.AuthorViewPort;
 import io.redintro.hexgraph.port.in.BookViewPort;
 import org.slf4j.Logger;

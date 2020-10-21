@@ -1,5 +1,6 @@
-package io.redintro.hexgraph.domain;
+package io.redintro.hexgraph.domain.model;
 
+import io.redintro.hexgraph.domain.model.Author;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;

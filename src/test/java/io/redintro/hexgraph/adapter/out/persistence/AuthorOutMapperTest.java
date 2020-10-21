@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.adapter.out.persistence;
 
-import io.redintro.hexgraph.domain.Author;
+import io.redintro.hexgraph.domain.model.Author;
 import org.junit.jupiter.api.Test;
 
 import java.util.UUID;

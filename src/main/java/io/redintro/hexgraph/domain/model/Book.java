@@ -1,4 +1,4 @@
-package io.redintro.hexgraph.domain;
+package io.redintro.hexgraph.domain.model;
 
 import java.util.UUID;
 

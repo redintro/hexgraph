@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.port.out;
 
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Book;
 
 import java.util.List;
 import java.util.UUID;

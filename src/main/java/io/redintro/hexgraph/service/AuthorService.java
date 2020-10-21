@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.service;
 
-import io.redintro.hexgraph.domain.Author;
+import io.redintro.hexgraph.domain.model.Author;
 import io.redintro.hexgraph.port.in.AuthorViewPort;
 import io.redintro.hexgraph.port.out.AuthorStorePort;
 import org.springframework.stereotype.Service;

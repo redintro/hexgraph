@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.service;
 
-import io.redintro.hexgraph.domain.Author;
+import io.redintro.hexgraph.domain.model.Author;
 
 import java.util.UUID;
 

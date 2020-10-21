@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.adapter.out.persistence;
 
-import io.redintro.hexgraph.domain.Book;
+import io.redintro.hexgraph.domain.model.Book;
 import io.redintro.hexgraph.port.out.BookStorePort;
 import org.springframework.stereotype.Component;
 

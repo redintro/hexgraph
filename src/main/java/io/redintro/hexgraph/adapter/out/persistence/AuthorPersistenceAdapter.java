@@ -1,6 +1,6 @@
 package io.redintro.hexgraph.adapter.out.persistence;
 
-import io.redintro.hexgraph.domain.Author;
+import io.redintro.hexgraph.domain.model.Author;
 import io.redintro.hexgraph.port.out.AuthorStorePort;
 import org.springframework.stereotype.Component;
 
