@@ -1,5 +1,5 @@
 # Hexgraph
-A Spring GraphQl microservice
+A Spring GraphQL microservice
 
 ## Git
 - https://github.com/redintro/hexgraph
