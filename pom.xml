@@ -26,8 +26,8 @@
 		<jacoco.line.coverage.threshold>100%</jacoco.line.coverage.threshold>
 		<jacoco.version>0.8.5</jacoco.version>
 		<java.version>11</java.version>
-		<liquibase.core.version>3.8.7</liquibase.core.version>
-		<postgresql.version>42.2.10</postgresql.version>
+		<liquibase.core.version>4.8.0</liquibase.core.version>
+		<postgresql.version>42.2.25</postgresql.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 	</properties>
